@@ -14,12 +14,10 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    [[UINavigationBar appearance] setBackgroundColor:[UIColor cyanColor]];
+    UINavigationBar *bar = [UINavigationBar appearance];
+    [bar setBackgroundColor:[UIColor cyanColor]];
     [[UISearchBar appearance] setTintColor:[UIColor whiteColor]];
-    
     return YES;
 }
 

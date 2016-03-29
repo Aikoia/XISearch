@@ -7,17 +7,29 @@
 //
 
 #import "ViewController.h"
+
+#import "XISearchViewController.h"
 #import "XISearchBar.h"
 
-
-@interface ViewController ()<UISearchBarDelegate,UISearchDisplayDelegate>
-
-@property (nonatomic , strong) UISearchDisplayController *searchDisplayController;
+@interface ViewController ()<UISearchBarDelegate>
 @property (nonatomic , strong) XISearchBar *searchBar;
 
 @end
 
 @implementation ViewController
+
+- (UIImageView *)findHairlineImageViewUnder:(UIView *)view {
+    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0) {
+        return (UIImageView *)view;
+    }
+    for (UIView *subview in view.subviews) {
+        UIImageView *imageView = [self findHairlineImageViewUnder:subview];
+        if (imageView) {
+            return imageView;
+        }
+    }
+    return nil;
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -31,12 +43,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[self findHairlineImageViewUnder:self.navigationController.navigationBar] removeFromSuperview];
     _searchBar = ({
         XISearchBar *searchBar = [XISearchBar new];
         CGFloat width = [UIScreen mainScreen].bounds.size.width;
         searchBar.frame = CGRectMake(60, 27, width - 115, 31);
         [searchBar setContentMode:UIViewContentModeLeft];
-        [searchBar setPlaceholder:@"Search Google or you like"];
+        [searchBar setPlaceholder:@"Google"];
         searchBar.delegate = self;
         searchBar.layer.cornerRadius = 15;
         searchBar.layer.masksToBounds = YES;

@@ -18,6 +18,15 @@
 		31508FB01CA910D300D7B649 /* XISearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 31508FAE1CA910D300D7B649 /* XISearchBar.m */; };
 		31508FB11CA910D300D7B649 /* XISearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 31508FAE1CA910D300D7B649 /* XISearchBar.m */; };
 		31508FB21CA910D300D7B649 /* XISearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 31508FAE1CA910D300D7B649 /* XISearchBar.m */; };
+		315C1BFE1CAA2E8A002D3A5B /* XISearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315C1BFD1CAA2E8A002D3A5B /* XISearchViewController.m */; };
+		315C1BFF1CAA2E8A002D3A5B /* XISearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315C1BFD1CAA2E8A002D3A5B /* XISearchViewController.m */; };
+		315C1C001CAA2E8A002D3A5B /* XISearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315C1BFD1CAA2E8A002D3A5B /* XISearchViewController.m */; };
+		31A285501CAA51BE0079B4B7 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A2854F1CAA51BE0079B4B7 /* KxMenu.m */; };
+		31A285511CAA51BE0079B4B7 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A2854F1CAA51BE0079B4B7 /* KxMenu.m */; };
+		31A285521CAA51BE0079B4B7 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A2854F1CAA51BE0079B4B7 /* KxMenu.m */; };
+		31A285551CAA54CE0079B4B7 /* XISearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A285541CAA54CE0079B4B7 /* XISearchDisplayController.m */; };
+		31A285561CAA54CE0079B4B7 /* XISearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A285541CAA54CE0079B4B7 /* XISearchDisplayController.m */; };
+		31A285571CAA54CE0079B4B7 /* XISearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A285541CAA54CE0079B4B7 /* XISearchDisplayController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +65,12 @@
 		31508F9C1CA8D3FD00D7B649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31508FAE1CA910D300D7B649 /* XISearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XISearchBar.m; sourceTree = "<group>"; };
 		31508FAF1CA910D300D7B649 /* XISearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISearchBar.h; sourceTree = "<group>"; };
+		315C1BFC1CAA2E8A002D3A5B /* XISearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISearchViewController.h; sourceTree = "<group>"; };
+		315C1BFD1CAA2E8A002D3A5B /* XISearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XISearchViewController.m; sourceTree = "<group>"; };
+		31A2854E1CAA51BE0079B4B7 /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
+		31A2854F1CAA51BE0079B4B7 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
+		31A285531CAA54CE0079B4B7 /* XISearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISearchDisplayController.h; sourceTree = "<group>"; };
+		31A285541CAA54CE0079B4B7 /* XISearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XISearchDisplayController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +121,13 @@
 		31508F741CA8D3FC00D7B649 /* XISearch */ = {
 			isa = PBXGroup;
 			children = (
+				31A2854C1CAA51B20079B4B7 /* Vendor */,
 				31508FAF1CA910D300D7B649 /* XISearchBar.h */,
 				31508FAE1CA910D300D7B649 /* XISearchBar.m */,
+				315C1BFC1CAA2E8A002D3A5B /* XISearchViewController.h */,
+				315C1BFD1CAA2E8A002D3A5B /* XISearchViewController.m */,
+				31A285531CAA54CE0079B4B7 /* XISearchDisplayController.h */,
+				31A285541CAA54CE0079B4B7 /* XISearchDisplayController.m */,
 				31508F781CA8D3FC00D7B649 /* AppDelegate.h */,
 				31508F791CA8D3FC00D7B649 /* AppDelegate.m */,
 				31508F7B1CA8D3FC00D7B649 /* ViewController.h */,
@@ -145,6 +165,23 @@
 				31508F9C1CA8D3FD00D7B649 /* Info.plist */,
 			);
 			path = XISearchUITests;
+			sourceTree = "<group>";
+		};
+		31A2854C1CAA51B20079B4B7 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				31A2854D1CAA51BE0079B4B7 /* KxMenu */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		31A2854D1CAA51BE0079B4B7 /* KxMenu */ = {
+			isa = PBXGroup;
+			children = (
+				31A2854E1CAA51BE0079B4B7 /* KxMenu.h */,
+				31A2854F1CAA51BE0079B4B7 /* KxMenu.m */,
+			);
+			path = KxMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +251,7 @@
 				TargetAttributes = {
 					31508F711CA8D3FC00D7B649 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = CSJ96L5D7F;
 					};
 					31508F8A1CA8D3FD00D7B649 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -277,6 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31A285551CAA54CE0079B4B7 /* XISearchDisplayController.m in Sources */,
+				315C1BFE1CAA2E8A002D3A5B /* XISearchViewController.m in Sources */,
+				31A285501CAA51BE0079B4B7 /* KxMenu.m in Sources */,
 				31508FB01CA910D300D7B649 /* XISearchBar.m in Sources */,
 				31508F7D1CA8D3FC00D7B649 /* ViewController.m in Sources */,
 				31508F7A1CA8D3FC00D7B649 /* AppDelegate.m in Sources */,
@@ -289,7 +330,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				31508FB11CA910D300D7B649 /* XISearchBar.m in Sources */,
+				31A285561CAA54CE0079B4B7 /* XISearchDisplayController.m in Sources */,
 				31508F901CA8D3FD00D7B649 /* XISearchTests.m in Sources */,
+				315C1BFF1CAA2E8A002D3A5B /* XISearchViewController.m in Sources */,
+				31A285511CAA51BE0079B4B7 /* KxMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +342,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				31508FB21CA910D300D7B649 /* XISearchBar.m in Sources */,
+				31A285571CAA54CE0079B4B7 /* XISearchDisplayController.m in Sources */,
 				31508F9B1CA8D3FD00D7B649 /* XISearchUITests.m in Sources */,
+				315C1C001CAA2E8A002D3A5B /* XISearchViewController.m in Sources */,
+				31A285521CAA51BE0079B4B7 /* KxMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,10 +468,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = XISearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xi.XISearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -432,10 +482,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = XISearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xi.XISearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

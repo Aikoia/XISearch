@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^SelectedBlock)();
+@interface XIResultSearchBar : UISearchBar
+
+- (void)itemsAndIconButtonSelectedBlock:(SelectedBlock)selectedBlock;
+
+@end
+
+
 @interface XISearchBar : UISearchBar
 @property (nonatomic , strong) UIButton *scanButton;
 @end
