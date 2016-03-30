@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310332A71CAB690E00A7EBA6 /* XISearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 310332A61CAB690E00A7EBA6 /* XISearchDisplayController.m */; };
+		310332A81CAB690E00A7EBA6 /* XISearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 310332A61CAB690E00A7EBA6 /* XISearchDisplayController.m */; };
+		310332A91CAB690E00A7EBA6 /* XISearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 310332A61CAB690E00A7EBA6 /* XISearchDisplayController.m */; };
+		310332AD1CAB6FAD00A7EBA6 /* XHRealTimeBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 310332AC1CAB6FAD00A7EBA6 /* XHRealTimeBlur.m */; };
+		310332AE1CAB6FAD00A7EBA6 /* XHRealTimeBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 310332AC1CAB6FAD00A7EBA6 /* XHRealTimeBlur.m */; };
+		310332AF1CAB6FAD00A7EBA6 /* XHRealTimeBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 310332AC1CAB6FAD00A7EBA6 /* XHRealTimeBlur.m */; };
 		31508F771CA8D3FC00D7B649 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31508F761CA8D3FC00D7B649 /* main.m */; };
 		31508F7A1CA8D3FC00D7B649 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31508F791CA8D3FC00D7B649 /* AppDelegate.m */; };
 		31508F7D1CA8D3FC00D7B649 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31508F7C1CA8D3FC00D7B649 /* ViewController.m */; };
@@ -21,12 +27,12 @@
 		315C1BFE1CAA2E8A002D3A5B /* XISearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315C1BFD1CAA2E8A002D3A5B /* XISearchViewController.m */; };
 		315C1BFF1CAA2E8A002D3A5B /* XISearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315C1BFD1CAA2E8A002D3A5B /* XISearchViewController.m */; };
 		315C1C001CAA2E8A002D3A5B /* XISearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315C1BFD1CAA2E8A002D3A5B /* XISearchViewController.m */; };
+		315F5B871CAB7492000450D5 /* XISearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 315F5B861CAB7492000450D5 /* XISearchModel.m */; };
+		315F5B881CAB7492000450D5 /* XISearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 315F5B861CAB7492000450D5 /* XISearchModel.m */; };
+		315F5B891CAB7492000450D5 /* XISearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 315F5B861CAB7492000450D5 /* XISearchModel.m */; };
 		31A285501CAA51BE0079B4B7 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A2854F1CAA51BE0079B4B7 /* KxMenu.m */; };
 		31A285511CAA51BE0079B4B7 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A2854F1CAA51BE0079B4B7 /* KxMenu.m */; };
 		31A285521CAA51BE0079B4B7 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A2854F1CAA51BE0079B4B7 /* KxMenu.m */; };
-		31A285551CAA54CE0079B4B7 /* XISearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A285541CAA54CE0079B4B7 /* XISearchDisplayController.m */; };
-		31A285561CAA54CE0079B4B7 /* XISearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A285541CAA54CE0079B4B7 /* XISearchDisplayController.m */; };
-		31A285571CAA54CE0079B4B7 /* XISearchDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A285541CAA54CE0079B4B7 /* XISearchDisplayController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		310332A51CAB690E00A7EBA6 /* XISearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISearchDisplayController.h; sourceTree = "<group>"; };
+		310332A61CAB690E00A7EBA6 /* XISearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XISearchDisplayController.m; sourceTree = "<group>"; };
+		310332AB1CAB6FAD00A7EBA6 /* XHRealTimeBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRealTimeBlur.h; sourceTree = "<group>"; };
+		310332AC1CAB6FAD00A7EBA6 /* XHRealTimeBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRealTimeBlur.m; sourceTree = "<group>"; };
 		31508F721CA8D3FC00D7B649 /* XISearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XISearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31508F761CA8D3FC00D7B649 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31508F781CA8D3FC00D7B649 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,10 +77,10 @@
 		31508FAF1CA910D300D7B649 /* XISearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISearchBar.h; sourceTree = "<group>"; };
 		315C1BFC1CAA2E8A002D3A5B /* XISearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISearchViewController.h; sourceTree = "<group>"; };
 		315C1BFD1CAA2E8A002D3A5B /* XISearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XISearchViewController.m; sourceTree = "<group>"; };
+		315F5B851CAB7492000450D5 /* XISearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISearchModel.h; sourceTree = "<group>"; };
+		315F5B861CAB7492000450D5 /* XISearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XISearchModel.m; sourceTree = "<group>"; };
 		31A2854E1CAA51BE0079B4B7 /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
 		31A2854F1CAA51BE0079B4B7 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
-		31A285531CAA54CE0079B4B7 /* XISearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISearchDisplayController.h; sourceTree = "<group>"; };
-		31A285541CAA54CE0079B4B7 /* XISearchDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XISearchDisplayController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		310332AA1CAB6FAD00A7EBA6 /* XHRealTimeBlur */ = {
+			isa = PBXGroup;
+			children = (
+				310332AB1CAB6FAD00A7EBA6 /* XHRealTimeBlur.h */,
+				310332AC1CAB6FAD00A7EBA6 /* XHRealTimeBlur.m */,
+			);
+			path = XHRealTimeBlur;
+			sourceTree = "<group>";
+		};
 		31508F691CA8D3FC00D7B649 = {
 			isa = PBXGroup;
 			children = (
@@ -126,8 +145,10 @@
 				31508FAE1CA910D300D7B649 /* XISearchBar.m */,
 				315C1BFC1CAA2E8A002D3A5B /* XISearchViewController.h */,
 				315C1BFD1CAA2E8A002D3A5B /* XISearchViewController.m */,
-				31A285531CAA54CE0079B4B7 /* XISearchDisplayController.h */,
-				31A285541CAA54CE0079B4B7 /* XISearchDisplayController.m */,
+				310332A51CAB690E00A7EBA6 /* XISearchDisplayController.h */,
+				310332A61CAB690E00A7EBA6 /* XISearchDisplayController.m */,
+				315F5B851CAB7492000450D5 /* XISearchModel.h */,
+				315F5B861CAB7492000450D5 /* XISearchModel.m */,
 				31508F781CA8D3FC00D7B649 /* AppDelegate.h */,
 				31508F791CA8D3FC00D7B649 /* AppDelegate.m */,
 				31508F7B1CA8D3FC00D7B649 /* ViewController.h */,
@@ -170,6 +191,7 @@
 		31A2854C1CAA51B20079B4B7 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				310332AA1CAB6FAD00A7EBA6 /* XHRealTimeBlur */,
 				31A2854D1CAA51BE0079B4B7 /* KxMenu */,
 			);
 			name = Vendor;
@@ -315,9 +337,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31A285551CAA54CE0079B4B7 /* XISearchDisplayController.m in Sources */,
+				315F5B871CAB7492000450D5 /* XISearchModel.m in Sources */,
+				310332A71CAB690E00A7EBA6 /* XISearchDisplayController.m in Sources */,
 				315C1BFE1CAA2E8A002D3A5B /* XISearchViewController.m in Sources */,
 				31A285501CAA51BE0079B4B7 /* KxMenu.m in Sources */,
+				310332AD1CAB6FAD00A7EBA6 /* XHRealTimeBlur.m in Sources */,
 				31508FB01CA910D300D7B649 /* XISearchBar.m in Sources */,
 				31508F7D1CA8D3FC00D7B649 /* ViewController.m in Sources */,
 				31508F7A1CA8D3FC00D7B649 /* AppDelegate.m in Sources */,
@@ -330,8 +354,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				31508FB11CA910D300D7B649 /* XISearchBar.m in Sources */,
-				31A285561CAA54CE0079B4B7 /* XISearchDisplayController.m in Sources */,
+				310332AE1CAB6FAD00A7EBA6 /* XHRealTimeBlur.m in Sources */,
+				310332A81CAB690E00A7EBA6 /* XISearchDisplayController.m in Sources */,
 				31508F901CA8D3FD00D7B649 /* XISearchTests.m in Sources */,
+				315F5B881CAB7492000450D5 /* XISearchModel.m in Sources */,
 				315C1BFF1CAA2E8A002D3A5B /* XISearchViewController.m in Sources */,
 				31A285511CAA51BE0079B4B7 /* KxMenu.m in Sources */,
 			);
@@ -342,8 +368,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				31508FB21CA910D300D7B649 /* XISearchBar.m in Sources */,
-				31A285571CAA54CE0079B4B7 /* XISearchDisplayController.m in Sources */,
+				310332AF1CAB6FAD00A7EBA6 /* XHRealTimeBlur.m in Sources */,
+				310332A91CAB690E00A7EBA6 /* XISearchDisplayController.m in Sources */,
 				31508F9B1CA8D3FD00D7B649 /* XISearchUITests.m in Sources */,
+				315F5B891CAB7492000450D5 /* XISearchModel.m in Sources */,
 				315C1C001CAA2E8A002D3A5B /* XISearchViewController.m in Sources */,
 				31A285521CAA51BE0079B4B7 /* KxMenu.m in Sources */,
 			);

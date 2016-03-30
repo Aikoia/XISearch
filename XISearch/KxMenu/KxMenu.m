@@ -543,7 +543,7 @@ typedef enum {
 //            gradientView.contentMode = UIViewContentModeLeft;
             
             UIView *lineView=[UIView new];
-            lineView.backgroundColor=[UIColor colorWithHexString:@"0xffffff" andAlpha:0.2];
+            lineView.backgroundColor=[UIColor colorWithWhite:0 alpha:0.2];
             lineView.frame=CGRectMake(0, maxItemHeight + 0.3, 160, 0.5);
             [itemView addSubview:lineView];
             

@@ -47,16 +47,13 @@
     _searchBar = ({
         XISearchBar *searchBar = [XISearchBar new];
         CGFloat width = [UIScreen mainScreen].bounds.size.width;
-        searchBar.frame = CGRectMake(60, 27, width - 115, 31);
-        [searchBar setContentMode:UIViewContentModeLeft];
-        [searchBar setPlaceholder:@"Google"];
+        searchBar.placeholder = @"Google";
         searchBar.delegate = self;
         searchBar.layer.cornerRadius = 15;
         searchBar.layer.masksToBounds = YES;
         searchBar.layer.borderWidth = 8;
         searchBar.layer.borderColor = [UIColor whiteColor].CGColor;
-        [searchBar sizeToFit];
-        searchBar.frame = CGRectMake(searchBar.frame.origin.x, searchBar.frame.origin.y, searchBar.frame.size.width, 30);
+        searchBar.frame = CGRectMake(60, 27, width - 115, 31);
         [searchBar.scanButton addTarget:self action:@selector(goToScanVC:) forControlEvents:UIControlEventTouchUpInside];
         searchBar;
     });
@@ -69,7 +66,9 @@
 }
 
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar {
-    
+    XISearchViewController *searchViewController = [XISearchViewController new];
+    UINavigationController *searchNavi = [[UINavigationController alloc] initWithRootViewController:searchViewController];
+    [self.navigationController presentViewController:searchNavi animated:NO completion:nil];
     return NO;
 }
 

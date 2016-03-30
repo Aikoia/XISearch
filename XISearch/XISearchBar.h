@@ -10,9 +10,8 @@
 
 typedef void(^SelectedBlock)();
 @interface XIResultSearchBar : UISearchBar
-
-- (void)itemsAndIconButtonSelectedBlock:(SelectedBlock)selectedBlock;
-
+- (void)menuItemsSelectedBlock:(SelectedBlock)selectedBlock;
+- (void)refreshItemsButtonTitle:(NSString *)title;
 @end
 
 

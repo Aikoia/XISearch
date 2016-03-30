@@ -17,21 +17,43 @@
 @implementation XIResultSearchBar
 
 - (void)layoutSubviews {
+    [self setBackgroundImage:[UIImage new]];
+    [self setBackgroundColor:[UIColor whiteColor]];
     self.autoresizesSubviews = YES;
     NSPredicate *finalPredicate = [NSPredicate predicateWithBlock:^BOOL(UIView *candidateView, NSDictionary *bindings) {
         return [candidateView isMemberOfClass:NSClassFromString(@"UISearchBarTextField")];
     }];
     UITextField *searchTextField = [[self.subviews.firstObject.subviews filteredArrayUsingPredicate:finalPredicate] lastObject];
-    searchTextField.textAlignment = NSTextAlignmentCenter;
-    searchTextField.frame = CGRectMake(40, 4.5, self.frame.size.width, 22);
+    searchTextField.frame = CGRectMake(40, 4.5, self.frame.size.width - 40, 22);
     UIImageView *leftView = (UIImageView *)searchTextField.leftView;
     leftView.frame = CGRectZero;
 }
 
-- (void)itemsAndIconButtonSelectedBlock:(SelectedBlock)selectedBlock {
+- (void)menuItemsSelectedBlock:(SelectedBlock)selectedBlock {
+    [self addSubview:_itemsButton];
     if (selectedBlock) {
          _selectedBlock = selectedBlock;
     }
+}
+
+- (UIButton *)itemsButton {
+    if (!_itemsButton) {
+        _itemsButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _itemsButton.frame = CGRectMake(self.frame.size.width - 50, 0, 50, 31);
+        [_itemsButton setTitle:@"全部" forState:UIControlStateNormal];
+        _itemsButton.backgroundColor = [UIColor redColor];
+        [_itemsButton addTarget:self action:@selector(itemsOrIconButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:_itemsButton];
+    }
+    return _itemsButton;
+}
+
+- (void)itemsOrIconButtonClicked {
+    _selectedBlock();
+}
+
+- (void)refreshItemsButtonTitle:(NSString *)title {
+    [_itemsButton setTitle:title forState:UIControlStateNormal];
 }
 
 @end
@@ -50,7 +72,7 @@
     }];
     
     UITextField *searchField = [[[[[self subviews] firstObject] subviews] filteredArrayUsingPredicate:finalPredicate] lastObject];
-    [searchField setFrame:CGRectMake(-CGRectGetWidth(self.frame)/2 + 44, 4.5, CGRectGetWidth(self.frame), 22)];
+    [searchField setFrame:CGRectMake(-CGRectGetWidth(self.frame)/2 + 44, 4, CGRectGetWidth(self.frame), 22)];
 
     UIImageView *fieldLeftView = (UIImageView *)searchField.leftView;
     CGRect frame = fieldLeftView.frame;
